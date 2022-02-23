@@ -1,0 +1,29 @@
+﻿@model WebApplication16.Models.Employee
+@{
+}
+<div class="row">
+    <div class="col-6 offset-3">
+        <form asp-action="Create" asp-controller="Employee" method="post">
+            <div class=" form-check-group">
+                <label asp-for="Name"></label>
+                <input  asp-for="Name" placeholder="Enter your name" class="form-control" />
+            </div>
+            <div class=" form-check-group">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" placeholder="Enter your EMail" class="form-control" />
+            </div>
+            <div class=" form-check-group">
+                <label asp-for="Phone"></label>
+                <input asp-for="Phone"  placeholder="Enter your Phone" class="form-control" />
+            </div>
+            <div class=" form-check-group">
+                <label asp-for="Address"></label>
+                <input asp-for="Address" placeholder="Enter your address" class="form-control" />
+            </div>
+            <div>
+                <button class="btn btn-danger" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</div>

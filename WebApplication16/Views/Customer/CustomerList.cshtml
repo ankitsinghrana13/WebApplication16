@@ -1,0 +1,20 @@
+﻿@model IEnumerable<WebApplication16.Models.Customer>
+@{
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+    </tr>
+    @foreach(var customers in Model)
+            {
+                <tr>
+                    <td>@customers.Name</td>
+                    <td>@customers.Email</td>
+                    <td>@customers.Phone</td>
+                </tr>
+            }
+
+</table>
